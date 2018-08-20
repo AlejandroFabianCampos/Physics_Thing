@@ -1,0 +1,26 @@
+body {
+    background-color: darkgoldenrod;
+    padding: 0px;
+    margin: 0px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    margin: 0px;
+    box-shadow: 0 50vh 0 50vh black;
+}
+
+.button {
+    display: inline-block;
+    padding: 3px 5px;
+    border: 1px solid #000;
+    background: #eee;
+    color: tomato;
+    text-decoration-line: none;
+}
+
+#mainPart {
+    background-color: burlywood;
+    margin: 0px;
+}
