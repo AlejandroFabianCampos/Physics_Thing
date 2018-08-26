@@ -6,22 +6,42 @@
     <title>Tiro Vertical</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
-    <script src="../jsFiles/main.js"></script>
-    <!--llamando los archivos para armar los gráficos -->
-
-
-    <!--Referenciando la libreria de Google Charts-->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-    google.charts.load('current', {packages: ['corechart']});
-    google.charts.setOnLoadCallback(drawChart);
-    ...
-    </script>
-
-</head>
+    </head>
 <body>
     <header>
         <a href="../index.html" class="button">Volver al menú principal.</a>
     </header>
+    <div>
+        <div>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="valMasa">
+                <strong>La masa del objeto lanzado es de: <strong id="showMasa"></strong> kg.</strong>
+                <p id="showMasa"></p>
+            </div>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="valVelocidadInicial">
+                <strong>La velocidad inicial es: <strong id="showVelocidad"></strong> m/s.</strong>
+            </div>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="valGravedad">
+                <strong>La aceleración de la gravedad es de: <strong id="showGravedad"></strong> m/s<sup>2</sup>. (La aceleración de la gravedad en la Tierra es de 10 m/s<sup>2</sup>.</strong>
+            </div>
+        </div>
+        <div>
+            <div id="chart_div" style="width: 900px; height: 500px"></div>
+        </div>
+    
+    <script src="../jsFiles/tiroVerticalFile.js"></script>
+    <!--llamando los archivos para armar los gráficos -->
+
+
+    <!--Referenciando la libreria de Google Charts-->
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="../jsFiles/tiroVerticalDrawFile.js"></script>
+    
+    
+
+    </div>
 </body>
 </html>
